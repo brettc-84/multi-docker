@@ -14,7 +14,7 @@ after_success:
   - docker build -t brettc84/multi-worker ./worker
   - docker build -t brettc84/multi-server ./server
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push brettc/multi-client
-  - docker push brettc/multi-nginx
-  - docker push brettc/multi-worker
-  - docker push brettc/multi-server
+  - docker push brettc84/multi-client
+  - docker push brettc84/multi-nginx
+  - docker push brettc84/multi-worker
+  - docker push brettc84/multi-server
